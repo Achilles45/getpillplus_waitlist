@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
+@import '../../styles/colors.scss';
+
+.herosection{
+    background: $primary-color;
+    height: 100vh;
+    color: #fff;
+    padding: 2rem 0;
+    position: relative;
+
+    //Icon holders
+    .herosection__icons__holder{
+        position: absolute;
+        .icons{
+            position: absolute;
+        }
+        .round-icon{
+            top: 70px;
+            left: 102px;
+        }
+        .pattern1{
+            bottom: -520px !important;
+            left: 90px;
+        }
+        .pattern2{
+            bottom: -520px !important;
+            left: 550px;
+        }
+        .pattern3{
+            left: 500px;
+            bottom: -80px;
+        }
+    }
+
+    //Balls Holder
+    .balls__holder{
+        position: absolute;
+        .ball{
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            border-radius: 50%;
+            animation-name: moveBalls;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .ball1{
+            background: #FF9A68;
+            right: -1250px;
+        }
+        .ball2{
+            background: #554F7F;
+            right: -800px;
+            bottom: -300px;
+        }
+        .ball3{
+            background: #FF5800;
+            right: -460px;
+            bottom: -50px;
+            animation-delay: 2s;
+        }
+        .ball4{
+            background: #7545FF;
+            bottom: -250px;
+            left: 40px;
+        }
+    }
+
+    //Content
+    .herosection__content{
+        padding-top: 5rem;
+        h1{
+            font-family: "Mulish" !important;
+            padding-bottom: 1.5rem;
+            text-transform: capitalize;
+            line-height: 1.2;
+            font-size: 3.2rem;
+            font-weight: 900;
+        }
+        p{
+            line-height: 2;
+            opacity: .7;
+            font-size: .945rem;
+        }
+
+        //Form
+        .waitlist__form{
+            padding-top: 1rem;
+            input{
+                width: 65%;
+                height: 3.5rem !important;
+                box-shadow: none;
+                margin-right: 1rem;
+                color: #627086;
+                border-radius: 6px;
+                &::placeholder{ 
+                    color: #627086;
+                    font-weight: 500;
+                }
+            }
+            .submit__btn{
+                background: $secondary-color;
+                color: #fff;
+                border: none;
+                width: 35%;
+                border-radius: 4px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    //Move-balls Animation Styles
+    @keyframes moveBalls {
+        from {
+            transform: translateY(20px);
+        }
+        to{
+            transform: translateY(200px);
+        }
+    }
+
+    //Media Queries for small screens
+    @media only screen and (max-width: 600px) {
+        .herosection{
+            .waitlist__form{
+                flex-direction: column !important;
+                input{
+                    width: 100% !important;
+                }
+                .submit__btn{
+                    width: 100% !important;
+                }
+            }
+        }
+      }
+}
