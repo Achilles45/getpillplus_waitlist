@@ -1,0 +1,14 @@
+// Bring in variables
+@import '../../styles/colors.scss';
+
+.navbar{
+    background: $primary-color;
+    padding: 1rem 0;
+    color: #fff;
+
+    //Logo
+    .logo{
+        width: 200px !important;
+        height: auto;
+    }
+}

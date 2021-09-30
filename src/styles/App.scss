@@ -1,0 +1,16 @@
+// Import all sass variables here
+@import './colors.scss';
+
+// Bring in Google Font style to be used
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mulish";
+    overflow-x: hidden !important;
+}

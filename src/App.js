@@ -1,13 +1,15 @@
+// Bring in the CSS File 
+import './styles/App.scss'
+
+// Bring in our components
+import Navbar from './components/Layouts/Navbar';
+import Herosection from './components/Layouts/Herosection';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Getpillplus</h1>
-        <p>
-          Join our waitlist and we will notify immediately we finally launch. Built with ❤ at Getpillplus Lab
-        </p>
-      </header>
+      <Navbar />
+      <Herosection />
     </div>
   );
 }
