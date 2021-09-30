@@ -37,7 +37,7 @@ export default class Herosection extends Component {
                             </form>
                         </div>
                         <div className="col-md-1"></div>
-                        <div className="col-md-6 d-none d-md-block">
+                        <div className="col-md-6 hero__img__section">
                             <img src={ woman } className="img-fluid" alt="Woman" />
                         </div>
                     </div>
