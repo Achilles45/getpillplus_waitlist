@@ -8,13 +8,13 @@ export default class Herosection extends Component {
     render() {
         return (
             <div className="herosection">
-                <div className="herosection__icons__holder d-none d-lg-block">
+                <div className="herosection__icons__holder">
                     <img src={ roundIcon } className="icons round-icon" alt="" />
                     <img src={ pattern } className="icons pattern1" alt="" />
                     <img src={ pattern } className="icons pattern2" alt="" />
                     <img src={ pattern } className="icons pattern3" alt="" />
                 </div>
-                <div className="balls__holder d-none d-lg-block">
+                <div className="balls__holder">
                     <div className="ball ball1"></div>
                     <div className="ball ball2"></div>
                     <div className="ball ball3"></div>
