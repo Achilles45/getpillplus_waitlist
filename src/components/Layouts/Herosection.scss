@@ -119,19 +119,28 @@
             transform: translateY(200px);
         }
     }
+}
 
-    //Media Queries for small screens
-    @media only screen and (max-width: 600px) {
-        .herosection{
-            .waitlist__form{
-                flex-direction: column !important;
-                input{
-                    width: 100% !important;
-                }
-                .submit__btn{
-                    width: 100% !important;
-                }
+ //Media Queries for small screens
+ @media only screen and (max-width: 1200px) {
+    .herosection{
+        .herosection__content{
+            padding-top: 3rem !important;
+            h1{
+                font-size: 2rem !important;
+                line-height: 1.5;
             }
         }
-      }
-}
+        .waitlist__form{
+            flex-direction: column;
+            input{
+                width: 100% !important;
+            }
+            .submit__btn{
+                width: 100% !important;
+                margin-top: 1rem;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+  }

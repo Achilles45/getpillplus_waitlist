@@ -25,7 +25,7 @@ export default class Herosection extends Component {
                 <div className="row">
                         <div className="col-md-5 herosection__content">
                             <h1>Redefining access to quality health care</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum assumenda numquam aliquid fugiat qui aut asperiores atque modi, labore quod!</p>
+                            <p>Get connected to your healthcare provider/patients to receive/offer quality medical services from anywhere in the world</p>
                             <form className="waitlist__form d-flex justify-content-betweeb">
                                 <input
                                     type="text"
@@ -37,7 +37,7 @@ export default class Herosection extends Component {
                             </form>
                         </div>
                         <div className="col-md-1"></div>
-                        <div className="col-md-6 d-none d-lg-block">
+                        <div className="col-md-6 d-none d-md-block">
                             <img src={ woman } className="img-fluid" alt="Woman" />
                         </div>
                     </div>
