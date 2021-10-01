@@ -124,12 +124,20 @@
  //Media Queries for small screens
  @media only screen and (max-width: 1200px) {
     .herosection{
+        height: auto;
+        padding: 2rem 1rem;
         .herosection__content{
             padding-top: 3rem !important;
             h1{
                 font-size: 2rem !important;
                 line-height: 1.5;
             }
+        }
+
+        //Herosection Image 
+        .hero__img__section{
+            padding-bottom: 2rem !important;
+            padding-top: 2rem !important;
         }
         .waitlist__form{
             flex-direction: column;
