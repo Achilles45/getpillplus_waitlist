@@ -156,6 +156,58 @@
   //Media Queries for Icons on Mobiles 
   @media only screen and (max-width: 600px){
     .herosection{
-        background: red;
+        overflow-x: hidden !important;
+        h1{
+            opacity: 1 !important;
+        }
+        //Icon holders
+    .herosection__icons__holder{
+        position: absolute;
+        .icons{
+            position: absolute;
+        }
+        .round-icon{
+            top: 30px;
+            left: 1px;
+        }
+        .pattern1{
+            bottom: -220px !important;
+            left: 150px;
+        }
+        .pattern2{
+            bottom: -520px !important;
+            left: 10px !important;
+        }
+        .pattern3{
+            left: 250px !important;
+            bottom: -30px !important;
+        }
+    }
+
+    //Balls for mobiles
+    .ball{
+        height: 10px !important;
+        width: 10px !important;
+    }
+    .ball1{
+        background: #FF9A68;
+        right: -300px !important;
+    }
+    .ball2{
+        background: #554F7F;
+        right: -200px !important;
+        bottom: -300px;
+    }
+    .ball3{
+        background: #FF5800;
+        right: -200px !important;
+        bottom: 50px !important;
+        animation-delay: 2s;
+    }
+    .ball4{
+        background: #7545FF;
+        bottom: -250px;
+        left: 40px;
+    }
     }
   }
