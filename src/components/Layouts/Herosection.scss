@@ -182,10 +182,13 @@
   @media only screen and (max-width: 600px){
     .herosection{
         overflow-x: hidden !important;
-        h1{
-            opacity: 1 !important;
-            font-size: 1.6rem !important;
-            padding-bottom: .5rem !important;
+        .herosection__content{
+            padding-top: 1rem !important;
+            h1{
+                opacity: 1 !important;
+                font-size: 1.6rem !important;
+                padding-bottom: .5rem !important;
+            }
         }
 
         .phoneHolder{
