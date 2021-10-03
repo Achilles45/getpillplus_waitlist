@@ -22,10 +22,9 @@ export default class Herosection extends Component {
         }
 
         //OnForm submit method
-        joinWaitlist = () => {
-            // db.collection('waitlist_users').add({
-            //     email: this.state.email
-            // })
+        joinWaitlist = (e) => {
+            e.preventDefault();
+            alert("Submitted successfully")
         }
 
     render() {
@@ -52,20 +51,20 @@ export default class Herosection extends Component {
                             <p>Get connected to your healthcare provider/patients to receive/offer quality medical services from anywhere in the world</p>
                             <form onSubmit={this.joinWaitlist.bind(this)} className="waitlist__form">
                                 <div className="row">
-                                <div className="col-md-6">
-                                <div className="form-group">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="Your email address...." 
-                                    name="email"
-                                    value={ email }
-                                    required
-                                    onChange={ this.onChange }
-                                    />
-                                </div>
-                                </div>
-                                <div className="col-md-6 phone">
+                                    <div className="col-md-6">
+                                        <div className="form-group">
+                                            <input
+                                                type="email"
+                                                className="form-control"
+                                                placeholder="Your email address...." 
+                                                name="email"
+                                                value={ email }
+                                                required
+                                                onChange={ this.onChange }
+                                                />
+                                        </div>
+                                    </div>
+                                <div className="col-md-6 phoneHolder">
                                 <div className="form-group">
                                 <input
                                     type="tel"
@@ -82,7 +81,7 @@ export default class Herosection extends Component {
                                 </div>
                                 </div>
                                 <button
-                                    type="submit" className="button" 
+                                    type="submit"
                                     className="submit__btn"><span>Join Our Waitlist</span></button>
                             </form>
                         </div>
