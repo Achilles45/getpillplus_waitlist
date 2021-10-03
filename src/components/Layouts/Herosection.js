@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Herosection.scss';
-import woman from '../../images/woman-image.png'
+import men from '../../images/men.png'
 // import roundIcon from '../../images/round-shape.svg'
-// import pattern from '../../images/pattern.svg'
+import pattern from '../../images/pattern.svg'
 
 
 //Firebase imports
@@ -10,7 +10,8 @@ import woman from '../../images/woman-image.png'
 export default class Herosection extends Component {
         //State
         state = {
-            email: ""
+            email: "",
+            phone: ""
         }
 
         //Methods
@@ -28,15 +29,15 @@ export default class Herosection extends Component {
         }
 
     render() {
-        const { email } = this.state;
+        const { email, phone } = this.state;
         return (
             <div className="herosection">
-                {/* <div className="herosection__icons__holder">
-                    <img src={ roundIcon } className="icons round-icon" alt="" />
+                <div className="herosection__icons__holder d-none d-md-block">
+                    {/* <img src={ roundIcon } className="icons round-icon" alt="" /> */}
                     <img src={ pattern } className="icons pattern1" alt="" />
                     <img src={ pattern } className="icons pattern2" alt="" />
                     <img src={ pattern } className="icons pattern3" alt="" />
-                </div> */}
+                </div>
                 {/* <div className="balls__holder">
                     <div className="ball ball1"></div>
                     <div className="ball ball2"></div>
@@ -49,23 +50,45 @@ export default class Herosection extends Component {
                         <div className="col-md-5 herosection__content">
                             <h1>Redefining access to quality health care</h1>
                             <p>Get connected to your healthcare provider/patients to receive/offer quality medical services from anywhere in the world</p>
-                            <form onSubmit={this.joinWaitlist.bind(this)} className="waitlist__form d-flex justify-content-betweeb">
+                            <form onSubmit={this.joinWaitlist.bind(this)} className="waitlist__form">
+                                <div className="row">
+                                <div className="col-md-6">
+                                <div className="form-group">
                                 <input
-                                    type="text"
+                                    type="email"
                                     className="form-control"
-                                    placeholder="Enter your email address" 
+                                    placeholder="Your email address...." 
                                     name="email"
                                     value={ email }
+                                    required
                                     onChange={ this.onChange }
                                     />
+                                </div>
+                                </div>
+                                <div className="col-md-6 phone">
+                                <div className="form-group">
+                                <input
+                                    type="tel"
+                                    className="form-control"
+                                    placeholder="Your phone number...." 
+                                    name="phone"
+                                    value={ phone }
+                                    max="11"
+                                    min="11"
+                                    onChange={ this.onChange }
+                                    required
+                                    />
+                                </div>
+                                </div>
+                                </div>
                                 <button
-                                    type="submit" 
-                                    className="submit__btn">Join Our Waitlist</button>
+                                    type="submit" className="button" 
+                                    className="submit__btn"><span>Join Our Waitlist</span></button>
                             </form>
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-6 hero__img__section">
-                            <img src={ woman } className="img-fluid" alt="Woman" />
+                            <img src={ men } className="img-fluid men" alt="men" />
                         </div>
                     </div>
                </div>
