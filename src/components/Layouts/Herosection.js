@@ -6,12 +6,15 @@ import pattern from '../../images/pattern.svg'
 
 
 //Firebase imports
+// import firebase from "firebase";
+import db from "../../firebase/init"
 
 export default class Herosection extends Component {
         //State
         state = {
             email: "",
-            phone: ""
+            phone: "",
+            account_type: ""
         }
 
         //Methods
@@ -24,11 +27,22 @@ export default class Herosection extends Component {
         //OnForm submit method
         joinWaitlist = (e) => {
             e.preventDefault();
-            alert("Submitted successfully")
+            db.collection("waitlist_users").doc(this.state.email).set({
+                email: this.state.email,
+                phone: this.state.phone,
+                account_type: this.state.account_type
+            }) 
+            alert("Successful")
+            //Then clear state
+            this.setState({
+                email: "",
+                phone: "",
+                account_type: ""
+            })
         }
 
     render() {
-        const { email, phone } = this.state;
+        const { email, phone, account_type } = this.state;
         return (
             <div className="herosection">
                 <div className="herosection__icons__holder d-none d-md-block">
@@ -80,6 +94,22 @@ export default class Herosection extends Component {
                                 </div>
                                 </div>
                                 </div>
+                               <div className="row">
+                               <div className="form-group mt-3">
+                                    <div className="dropdown">
+                                        <select 
+                                            name="account_type" 
+                                            className="form-select" 
+                                            id="" 
+                                            value={account_type} 
+                                            onChange={this.onChange}>
+                                            <option value="" defaultValue disabled>Select your account type...</option>
+                                            <option value="Professional">Professional</option>
+                                            <option value="Personal">Personal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               </div>
                                 <button
                                     type="submit"
                                     className="submit__btn"><span>Join Our Waitlist</span></button>
