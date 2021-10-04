@@ -4,8 +4,6 @@ import men from '../../images/men.png'
 // import roundIcon from '../../images/round-shape.svg'
 import pattern from '../../images/pattern.svg'
 
-
-//Firebase imports
 // import firebase from "firebase";
 import db from "../../firebase/init"
 
@@ -32,13 +30,16 @@ export default class Herosection extends Component {
                 phone: this.state.phone,
                 account_type: this.state.account_type
             }) 
-            alert("Successful")
+       
             //Then clear state
             this.setState({
                 email: "",
                 phone: "",
                 account_type: ""
             })
+
+            //Now redirect
+            window.history.pushState("temp data", "title", "/success");
         }
 
     render() {
@@ -97,7 +98,7 @@ export default class Herosection extends Component {
                                <div className="row">
                                <div className="form-group mt-3">
                                     <div className="dropdown">
-                                        <select 
+                                        <select required
                                             name="account_type" 
                                             className="form-select" 
                                             id="" 
@@ -113,7 +114,8 @@ export default class Herosection extends Component {
                                 <button
                                     type="submit"
                                     className="submit__btn"><span>Join Our Waitlist</span></button>
-                            </form>
+                            </form><br />
+                            <p className="help"><i className="fas fa-check-square"></i>&nbsp;&nbsp; If you need any help, call <a href="tel: +2347035813970" className="tel">0703-581-3970</a></p>
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-6 hero__img__section">

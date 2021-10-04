@@ -19,11 +19,11 @@
             left: 102px;
         }
         .pattern1{
-            bottom: -520px !important;
+            bottom: -540px !important;
             left: 90px;
         }
         .pattern2{
-            bottom: -520px !important;
+            bottom: -540px !important;
             left: 550px;
         }
         .pattern3{
@@ -250,5 +250,15 @@
         bottom: -250px;
         left: 40px;
     }
+    }
+  }
+
+  .help{
+      font-size: .9rem !important;
+    .fa-check-square{
+        color: $secondary-color;
+    }
+    .tel{
+        color: $primary-color;
     }
   }
