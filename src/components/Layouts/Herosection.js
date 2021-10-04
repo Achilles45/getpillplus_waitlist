@@ -4,10 +4,12 @@ import men from '../../images/men.png'
 // import roundIcon from '../../images/round-shape.svg'
 import pattern from '../../images/pattern.svg'
 
+import { withRouter } from 'react-router-dom';
+
 // import firebase from "firebase";
 import db from "../../firebase/init"
 
-export default class Herosection extends Component {
+class Herosection extends Component {
         //State
         state = {
             email: "",
@@ -39,7 +41,7 @@ export default class Herosection extends Component {
             })
 
             //Now redirect
-            window.history.pushState("temp data", "title", "/success");
+            this.props.history.push("/success")
         }
 
     render() {
@@ -127,3 +129,6 @@ export default class Herosection extends Component {
         )
     }
 }
+
+
+export default withRouter(Herosection)
