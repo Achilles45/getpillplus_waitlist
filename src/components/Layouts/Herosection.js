@@ -82,19 +82,19 @@ class Herosection extends Component {
                                         </div>
                                     </div>
                                 <div className="col-md-6 phoneHolder">
-                                <div className="form-group">
-                                <input
-                                    type="tel"
-                                    className="form-control"
-                                    placeholder="Your phone number...." 
-                                    name="phone"
-                                    value={ phone }
-                                    max="11"
-                                    min="11"
-                                    onChange={ this.onChange }
-                                    required
-                                    />
-                                </div>
+                                    <div className="form-group">
+                                        <input
+                                            type="tel"
+                                            className="form-control"
+                                            placeholder="Your phone number...." 
+                                            name="phone"
+                                            value={ phone }
+                                            max="11"
+                                            min="11"
+                                            onChange={ this.onChange }
+                                            required
+                                        />
+                                    </div>
                                 </div>
                                 </div>
                                <div className="row">
