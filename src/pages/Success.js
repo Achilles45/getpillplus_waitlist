@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../components/Layouts/Herosection.scss';
-import men from '../images/men.png'
+import doc from '../images/doc.svg'
 export default class Success extends Component {
 
     render() {
@@ -15,7 +15,7 @@ export default class Success extends Component {
                         </div><br /><br />
                         <div className="col-md-1"></div>
                         <div className="col-md-6 hero__img__section">
-                            <img src={ men } className="img-fluid men" alt="men" />
+                            <img src={ doc } className="img-fluid men" alt="men" />
                         </div>
                     </div>
                </div>

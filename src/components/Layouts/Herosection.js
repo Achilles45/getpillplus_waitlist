@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Herosection.scss';
-import men from '../../images/men.png'
-// import roundIcon from '../../images/round-shape.svg'
+import doc from '../../images/doc.svg'
+import roundIcon from '../../images/round-shape.svg'
 import pattern from '../../images/pattern.svg'
 
 import { withRouter } from 'react-router-dom';
@@ -49,18 +49,18 @@ class Herosection extends Component {
         return (
             <div className="herosection">
                 <div className="herosection__icons__holder d-none d-md-block">
-                    {/* <img src={ roundIcon } className="icons round-icon" alt="" /> */}
+                    <img src={ roundIcon } className="icons round-icon" alt="" />
                     <img src={ pattern } className="icons pattern1" alt="" />
                     <img src={ pattern } className="icons pattern2" alt="" />
                     <img src={ pattern } className="icons pattern3" alt="" />
                 </div>
-                {/* <div className="balls__holder">
+                <div className="balls__holder">
                     <div className="ball ball1"></div>
                     <div className="ball ball2"></div>
                     <div className="ball ball3"></div>
                     <div className="ball ball4"></div>
                     <div className="ball ball5"></div>
-                </div> */}
+                </div>
                <div className="container">
                 <div className="row">
                         <div className="col-md-5 herosection__content">
@@ -121,7 +121,7 @@ class Herosection extends Component {
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-6 hero__img__section">
-                            <img src={ men } className="img-fluid men" alt="men" />
+                            <img src={ doc } className="img-fluid men" alt="men" />
                         </div>
                     </div>
                </div>
