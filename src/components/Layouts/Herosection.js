@@ -117,7 +117,7 @@ class Herosection extends Component {
                                     type="submit"
                                     className="submit__btn"><span>Join Our Waitlist</span></button>
                             </form><br />
-                            <p className="help"><i className="fas fa-check-square"></i>&nbsp;&nbsp; If you need any help, call <a href="tel: +2347035813970" className="tel">0703-581-3970</a></p>
+                            <p className="help"><i className="fas fa-check-square"></i>&nbsp;&nbsp; Follow us on twitter  <a href="https://twitter.com/pillplus_" className="tel">@pillplus_</a></p>
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-6 hero__img__section">

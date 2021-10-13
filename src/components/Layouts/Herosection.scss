@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
 @import '../../styles/colors.scss';
 
 .herosection{
@@ -72,12 +71,12 @@
     .herosection__content{
         padding-top: 4rem;
         h1{
-            font-family: "Mulish" !important;
+            font-family: "DM Sans" !important;
             padding-bottom: 1rem;
             text-transform: capitalize;
-            line-height: 1.2;
+            line-height: 1.4;
             font-size: 2.5rem;
-            font-weight: 900;
+            font-weight: bolder;
             color: #fff
         }
         p{

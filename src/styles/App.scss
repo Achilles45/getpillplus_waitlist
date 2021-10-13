@@ -2,8 +2,7 @@
 @import './colors.scss';
 
 // Bring in Google Font style to be used
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 *{
     padding: 0;
@@ -12,7 +11,7 @@
 }
 
 body{
-    font-family: "Mulish" !important;
+    font-family: "DM Sans" !important;
     overflow-x: hidden !important;
     font-style: normal;
 }
