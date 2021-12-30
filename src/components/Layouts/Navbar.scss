@@ -3,12 +3,12 @@
 
 .navbar{
     background: $primary-color;
-    padding-top: 4rem;
+    // padding-top: 4rem;
     color: #fff;
 
     //Logo
     .logo{
-        width: 120px;
+        width: 250px;
         height: auto;
     }
 }
@@ -16,6 +16,6 @@
 //Media Queries
 @media only screen and (max-width: 1200px) {
     .logo{
-        width: 150px !important;
+        width: 250px !important;
     }
 }
