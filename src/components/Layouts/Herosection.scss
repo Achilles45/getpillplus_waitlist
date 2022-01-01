@@ -5,7 +5,7 @@
     background: $primary-color;
     height: 100vh;
     color: #fff;
-    // padding: 2rem 0;
+    padding: 2rem 0;
     position: relative;
 
     //Icon holders
@@ -69,7 +69,7 @@
 
     //Content
     .herosection__content{
-        // padding-top: 4rem;
+        padding-top: 4rem;
         h1{
             font-family: "DM Sans" !important;
             padding-bottom: 1rem;
@@ -87,7 +87,7 @@
 
         //Form
         .waitlist__form{
-            // padding-top: 1rem;
+            padding-top: 1rem;
             input, select {
                 height: 3.2rem !important;
                 box-shadow: none;
@@ -156,9 +156,9 @@
  @media only screen and (max-width: 1200px) {
     .herosection{
         height: auto;
-        // padding: 2rem .7rem;
+        padding: 2rem .7rem;
         .herosection__content{
-            // padding-top: 3rem !important;
+            padding-top: 3rem !important;
             h1{
                 font-size: 2rem;
                 line-height: 1.5;
